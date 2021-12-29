@@ -8,6 +8,8 @@ import FeedbackStats from "./components/FeedbackStats"
 import FeedbackForm from "./components/FeedbackForm"
 import FeedbackData from "./data/feedbackData"
 import AboutPage from "./pages/AboutPage"
+import AboutIconLink from "./components/AboutIconLink"
+
 
 
 
@@ -43,6 +45,7 @@ const deletFeedback = (id) => {
 
           <Route path='/about' element={<AboutPage />} />
         </Routes>
+        <AboutIconLink />
       </div>
     </Router>
   )
