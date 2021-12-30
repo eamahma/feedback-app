@@ -35,9 +35,8 @@ const deletFeedback = (id) => {
             <Route exact path='/' element={
               <>
                 <FeedbackForm handleAdd={addFeedback}/>
-                <FeedbackStats feedback={feedback}/>
-                <FeedbackList feedback={feedback} 
-                handleDelete={deletFeedback}/>
+                <FeedbackStats />
+                <FeedbackList handleDelete={deletFeedback}/>
               </>
             }>
             </Route>
