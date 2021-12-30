@@ -9,11 +9,6 @@ import FeedbackForm from "./components/FeedbackForm"
 import FeedbackData from "./data/feedbackData"
 import AboutPage from "./pages/AboutPage"
 import AboutIconLink from "./components/AboutIconLink"
-import Card from "./components/shared/Card"
-import Post from "./components/Post"
-
-
-
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData)
@@ -46,7 +41,6 @@ const deletFeedback = (id) => {
           </Route>
 
           <Route path='/about' element={<AboutPage />} />
-          <Route path='/post/*' element={<Post />} />
         </Routes>
 
         <AboutIconLink />
